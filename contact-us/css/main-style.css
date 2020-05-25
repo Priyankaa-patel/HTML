@@ -1,0 +1,134 @@
+/*--------- Main Css --------------*/
+
+*{
+    box-sizing: border-box; 
+    font-family: open sans;
+}
+body{
+    margin: 0;
+    padding: 0; 
+    font-size: 14px;
+    background: #fff;
+    color:#797979;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    
+}
+.bg-blue{
+    background:#58ACE6 ;
+    position: fixed;
+    top:0;
+    height: 300px;
+    width: 100%;
+    
+}
+
+.contact-box{
+    width: 800px;
+    height: auto;
+    background:#fff;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:1;
+}
+
+.col-50{
+    width: 50%;
+    min-height: 450px;
+    float:left;
+    padding: 50px;
+    margin: 0 auto;
+}
+.clear{clear: both;}
+
+/*-----------left column -------------*/
+.font-blue{color:#103f6f;}
+h2.font-blue{margin-top: 0;}
+.font13{
+    font-size:13px;
+}
+.line{margin: 10px 0;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight:bold;}
+    
+
+.line:before {
+    content: '';
+    background: #103f6f;
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+}
+
+ul.social-btn{
+    margin: 0;
+    padding:0;
+    width:100%;
+    float: left;
+}
+.social-btn li{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.social-btn li a{
+    display: block;
+    color:#103f6f;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.social-btn li a:hover{ background:rgba(16, 63, 111, 0.2);}
+/*-----------Right column -------------*/
+.blue-box{
+    background:#103f6f;
+}
+input[type=text], [type=email], select{
+    width: 100%;
+    padding:10px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+textarea{
+    width:100%;
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 20px;
+    padding:10px;
+}
+input[type=button]{
+    width: 40%;
+    height: 40px;
+    padding:10px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid #ccc;
+    color:#fff;
+    cursor: pointer;
+
+}
+input[type=button]:hover{background:rgba(255,255,255,0.5);}
+select:required:invalid{
+    color: #a0a0a0;
+}
+
+/*-----------Responsive CSS -------------*/
+@media screen and (max-width:800px){
+.container{
+        align-items: unset;
+}
+.col-50{
+    width: 100%;
+}
+
+}
