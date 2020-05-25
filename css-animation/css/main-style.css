@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.drop{
+    position: relative;
+    margin: 5%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.dropdown{
+list-style-type: none;
+margin: 0;
+padding: 10px;
+background: green;
+display: inline-block;
+}
+.dropbtn{
+color: #fff;
+cursor: pointer;
+}
+.dropdown-content{
+   
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #333333;
+    background: #eee;
+    color:#333;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+/*-----zshape----*/
+.anim{
+    position: relative;
+    background: red;
+    width: 100px;
+    height: 100px;
+    animation: animation 5s ease-in-out 2s 1 none;
+}
+@keyframes animation{
+    0%{left:0; top:0;}
+    33%{left:200px; top:0;}
+    66%{left:0; top:200px;}
+    100%{left:200px; top:200px;}
+   
+}
+/**** rotate hover***/
+
+.rotate{
+    width:200px;
+  height:200px;
+  background-color: red;
+  position:absolute;
+ 
+}
+.rotate:hover{
+
+    animation: center 3s forwards;
+}
+@keyframes center {
+    0% {
+        top:0%;
+        left:0%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        top:40%;
+        left:45%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/******* rotate *****/
+.rotate-infi{
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    position:absolute;
+    animation: infi 3s infinite;
+}
+
+@keyframes infi{
+    0%{
+        top:0%;
+        left: 0%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    100%{
+        top:40%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
